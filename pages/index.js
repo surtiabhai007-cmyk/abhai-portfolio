@@ -1,5 +1,6 @@
 import { Mail, Phone, Linkedin, ChevronLeft, ChevronRight } from "lucide-react";
 import { useRef, useState } from "react";
+import { FaWhatsapp, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 export default function Home() {
   const placeholder = "/certificates/placeholder.png";
@@ -160,7 +161,7 @@ const handleToggle = () => {
       {/* Navbar */}
       <header className="fixed top-0 left-0 w-full bg-gray-950/80 backdrop-blur-md z-50 shadow-md">
         <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
-          <h1 className="text-cyan-400 font-bold text-xl">Abhai Surti</h1>
+          <h1 className="text-cyan-400 font-bold text-xl"></h1>
           <nav className="hidden md:flex space-x-6 text-gray-300">
             <a href="#home" className="hover:text-cyan-400">Home</a>
             <a href="#about" className="hover:text-cyan-400">About</a>
@@ -275,7 +276,7 @@ const handleToggle = () => {
         className="mb-8 ml-6 transition-opacity duration-700 ease-in-out opacity-0 animate-fadeIn relative"
       >
         {/* Numbered circle instead of dot */}
-        <div className="absolute -left-10 top-1 flex items-center justify-center w-6 h-6 bg-cyan-500 text-black font-bold rounded-full shadow-md" style={{margin: "-5px 0px 0px 0px"}}>
+        <div className="absolute -left-10 top-1 flex items-center justify-center w-6 h-6 bg-cyan-500 text-black font-bold rounded-full shadow-md" style={{margin: "-4px 0px 0px 2px"}}>
           {i + 1}
         </div>
 
@@ -283,11 +284,11 @@ const handleToggle = () => {
           {exp.role} – <span className="text-white">{exp.company}</span>
         </h3>
         <p className="text-sm text-gray-400">{exp.period} | {exp.location}</p>
-        <ul className="pl-6 mt-2 text-gray-300 space-y-1 list-decimal list-inside">
-          {exp.details.map((d, j) => (
-            <li key={j}>{d}</li>
-          ))}
-        </ul>
+        <ul className="pl-6 mt-2 text-gray-300 space-y-1 list-disc list-inside">
+  {exp.details.map((d, j) => (
+    <li key={j}>{d}</li>
+  ))}
+</ul>
       </div>
     ))}
   </div>
@@ -365,28 +366,49 @@ const handleToggle = () => {
 
     <div className="grid md:grid-cols-3 gap-6 text-lg">
       {/* Email */}
-      <p className="flex items-center justify-center gap-3">
-  <span className="flex-shrink-0">
-    <Mail size={20} className="text-cyan-400" />
-  </span>
-  <a href="mailto:surti.abhai007@gmail.com" className="text-cyan-400 underline">
+<p className="flex items-center justify-center gap-3">
+<span className="flex-shrink-0">
+  <FaEnvelope 
+    size={20} 
+    className="text-red-400 transition-transform duration-300 hover:scale-125 hover:text-red-500" 
+  />
+</span>
+  <a href="mailto:surti.abhai007@gmail.com" className="text-cyan-400 underline hover:text-cyan-300 transition-colors">
     surti.abhai007@gmail.com
   </a>
 </p>
 
-      {/* Phone */}
-      <p className="flex items-center justify-center gap-3">
-        <Phone size={20} strokeWidth={2} className="text-cyan-400" /> 
-        +91-8238218235
-      </p>
+{/* WhatsApp */}
+<p className="flex items-center justify-center gap-3">
+  <FaWhatsapp 
+    size={20} 
+    className="text-green-500 transition-transform duration-300 hover:scale-125 hover:text-green-400" 
+  />
+  <a 
+    href="https://wa.me/918238218235?text=Hello%20Abhai%2C%20I%20am%20interested%20in%20connecting%20with%20you" 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    className="text-cyan-400 underline hover:text-cyan-300 transition-colors"
+  >
+    +91-8238218235
+  </a>
+</p>
 
-      {/* LinkedIn */}
-      <p className="flex items-center justify-center gap-3">
-        <Linkedin size={20} strokeWidth={2} className="text-cyan-400" /> 
-        <a href="https://www.linkedin.com/in/abhai-surti-b20854140" target="_blank" className="text-cyan-400 underline">
-          LinkedIn Profile
-        </a>
-      </p>
+{/* LinkedIn */}
+<p className="flex items-center justify-center gap-3">
+  <FaLinkedin 
+    size={20} 
+    className="text-blue-500 transition-transform duration-300 hover:scale-125 hover:text-blue-400" 
+  />
+  <a 
+    href="https://www.linkedin.com/in/abhai-surti-b20854140" 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    className="text-cyan-400 underline hover:text-cyan-300 transition-colors"
+  >
+    LinkedIn Profile
+  </a>
+</p>
     </div>
   </div>
 </section>

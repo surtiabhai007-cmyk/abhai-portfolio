@@ -22,13 +22,13 @@ export default function Document() {
         />
         <meta name="author" content="Abhai Surti" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://yourdomain.com" />
+        <link rel="canonical" href="https://abhai-surti-pm.vercel.app/" />
 
         {/* Open Graph */}
         <meta property="og:title" content="Abhai Surti | Project Manager Portfolio" />
         <meta property="og:description" content="Project Manager and Google PM Certified with 8+ years of IT experience. Skilled in Agile, AI/ML projects, and digital transformation." />
         <meta property="og:image" content="/image.png" />
-        <meta property="og:url" content="https://yourdomain.com" />
+        <meta property="og:url" content="https://abhai-surti-pm.vercel.app/" />
         <meta property="og:type" content="website" />
 
         {/* Twitter Card */}
@@ -56,7 +56,7 @@ export default function Document() {
               "@type": "Person",
               name: "Abhai Surti",
               jobTitle: "Project Manager",
-              url: "https://yourdomain.com",
+              url: "https://abhai-surti-pm.vercel.app/",
               sameAs: [
                 "https://www.linkedin.com/in/abhai-surti-b20854140",
                 "mailto:surti.abhai007@gmail.com"
@@ -74,7 +74,7 @@ export default function Document() {
           }}
         />
       </Head>
-      <title>Abhai Surti | Project Manager Portfolio</title>
+      <title>Abhai Surti | Project Manager | Google PM Certified</title>
       <body>
         <Main />
         <NextScript />
