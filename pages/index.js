@@ -186,7 +186,7 @@ const handleToggle = () => {
       {/* Navbar */}
       <header className="fixed top-0 left-0 w-full bg-gray-950/80 backdrop-blur-md z-50 shadow-md">
         <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
-          <h1 className="text-cyan-400 font-bold text-xl"></h1>
+          <h1 className="text-cyan-400 font-bold text-xl">Abhai Surti</h1>
           <nav className="hidden md:flex space-x-6 text-gray-300">
             <a href="#home" className="hover:text-cyan-400">Home</a>
             <a href="#about" className="hover:text-cyan-400">About</a>
@@ -224,7 +224,7 @@ const handleToggle = () => {
 
             <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center md:justify-start">
               <a
-                href="https://drive.google.com/uc?export=download&id=1eHQqlGFtKoszbUKzRvvqoctIi_meZPnl"
+                href="https://drive.google.com/uc?export=download&id=11EK9msbaBOlM34MAudGD1rHARvMDHffh"
                 target="_blank"
                 className="bg-cyan-500 text-black px-6 py-3 rounded-lg font-semibold shadow-lg hover:bg-cyan-400 transition transform hover:scale-105"
               >
