@@ -1,6 +1,31 @@
 import { Mail, Phone, Linkedin, ChevronLeft, ChevronRight } from "lucide-react";
 import { useRef, useState } from "react";
 import { FaWhatsapp, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import Head from "next/head";
+
+export default function Home() {
+  return (
+    <>
+      <Head>
+        {/* Title (shows in browser tab and Google results) */}
+        <title>Abhai Surti – Project Manager | Google PM Certified</title>
+
+        {/* Description (Google search snippet) */}
+        <meta
+          name="description"
+          content="Abhai Surti – Project Manager from Ahmedabad with 8 years of IT experience. Certified in Agile and Google Project Management. Skilled in handling client projects and company products."
+        />
+
+        {/* Tell search engines to index this page */}
+        <meta name="robots" content="index, follow" />
+      </Head>
+
+      <main>
+        {/* Your page content */}
+      </main>
+    </>
+  );
+}
 
 export default function Home() {
   const placeholder = "/certificates/placeholder.png";
