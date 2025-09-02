@@ -3,8 +3,10 @@ import { useRef, useState } from "react";
 import { FaWhatsapp, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import Head from "next/head";
 
+
 export default function Home() {
-  return (
+  const placeholder = "/certificates/placeholder.png";
+return (
     <>
       <Head>
         {/* Title (shows in browser tab and Google results) */}
@@ -25,11 +27,6 @@ export default function Home() {
       </main>
     </>
   );
-}
-
-export default function Home() {
-  const placeholder = "/certificates/placeholder.png";
-
   // Ref for certifications scroll
   const scrollRef = useRef(null);
   const scroll = (direction) => {
