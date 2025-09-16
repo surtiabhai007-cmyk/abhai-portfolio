@@ -1,17 +1,17 @@
 export default function Skills() {
   const skills = [
-    "📈 AI Roadmapping",
-    "⚡ Agile & Scrum",
-    "🗂️ Project Planning",
-    "👥 Team Leadership",
-    "🧠 AI Project Delivery",
-    "⚠️ Risk Management",
-    "🧩 Problem-solving",
-    "🛠️ JIRA / Trello / ClickUp",
-    "💬 Stakeholder Communication",
+    "⚡ Agile & Scrum (Certified)",
+    "📊 Digital Transformation Practices",
+    "🗂️ End-to-End Project Lifecycle Management",
+    "👥 Cross-functional Team Leadership",
+    "🤝 Stakeholder & Client Communication",
+    "🧠 AI/ML Project Delivery",
+    "⚠️ Risk & Issue Management",
+    "🛠️ Tools: Jira, Trello, ClickUp, Asana",
     "📈 Resource Allocation & Reporting",
-    "🤝 Client Stakeholder Management",
-    "📊 Data-Driven Decision Making",
+    "📑 Documentation & Requirement Analysis",
+    "🚀 Process Improvement & Efficiency Boost",
+    "🌍 Global Client Project Management",
   ];
 
   return (

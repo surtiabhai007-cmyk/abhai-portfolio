@@ -11,7 +11,7 @@ export default function Hero() {
           <div className="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 blur-xl opacity-40 animate-pulse"></div>
           <img
             src="/image.png"
-            alt="Abhai Surti"
+            alt="Abhai Surti Project Manager Profile Picture"
             className="relative w-48 h-48 md:w-56 md:h-56 rounded-full border-4 border-cyan-400 shadow-2xl object-cover object-top"
           />
         </div>
@@ -27,11 +27,13 @@ export default function Hero() {
             <span className="text-purple-400 font-semibold">Google PM Certified</span>
           </p>
 
-          {/* Branding Tagline */}
+          {/* Recruiter-Friendly Tagline */}
           <p className="mt-3 text-lg md:text-xl text-gray-400 italic">
-            Driving IT & AI Projects with <span className="text-cyan-300">Precision</span>,{" "}
-            <span className="text-purple-400">Agility</span>, and{" "}
-            <span className="text-cyan-400">Innovation</span>.
+            Driving <span className="text-cyan-300">Agile</span> &{" "}
+            <span className="text-purple-400">AI-driven IT Projects</span> with{" "}
+            <span className="text-cyan-400">Precision</span>,{" "}
+            <span className="text-purple-300">Digital Transformation</span>, and{" "}
+            <span className="text-cyan-300">Stakeholder Excellence</span>.
           </p>
 
           {/* Buttons */}

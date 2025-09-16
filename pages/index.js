@@ -8,6 +8,14 @@ import Certifications from "@/components/Certifications";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
+<Head>
+  <title>Abhai Surti – Project Manager | Agile & AI Project Coordinator</title>
+  <meta
+    name="description"
+    content="Abhai Surti – Project Manager from Ahmedabad with 8+ years of IT experience. Certified in Agile and Google Project Management. Skilled in AI-driven project delivery, stakeholder management, and digital transformation."
+  />
+</Head>
+
 export default function Home() {
   return (
     <>
