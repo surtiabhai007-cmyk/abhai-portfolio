@@ -12,7 +12,7 @@ export default function Hero() {
           <img
             src="/image.png"
             alt="Abhai Surti Project Manager Profile Picture"
-            className="relative w-48 h-48 md:w-56 md:h-56 rounded-full border-4 border-cyan-400 shadow-2xl object-cover object-top"
+            className="relative w-48 h-48 md:w-56 md:h-54 rounded-full border-4 border-cyan-400 shadow-2xl object-cover object-top"
           />
         </div>
 

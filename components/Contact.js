@@ -16,14 +16,15 @@ export default function Contact() {
 
         <div className="grid md:grid-cols-3 gap-6 text-lg">
           <p className="flex items-center justify-center gap-3">
-            <FaEnvelope size={20} className="text-red-400 hover:scale-125 transition" />
-            <a
-              href="mailto:surti.abhai007@gmail.com"
-              className="text-cyan-400 underline hover:text-cyan-300"
-            >
-              surti.abhai007@gmail.com
-            </a>
-          </p>
+  <FaEnvelope size={18} className="text-red-400 hover:scale-125 transition shrink-0" />
+  <a
+    href="mailto:surti.abhai007@gmail.com"
+    className="text-cyan-400 underline hover:text-cyan-300"
+  >
+    surti.abhai007@gmail.com
+  </a>
+</p>
+
 
           <p className="flex items-center justify-center gap-3">
             <FaWhatsapp size={20} className="text-green-500 hover:scale-125 transition" />
