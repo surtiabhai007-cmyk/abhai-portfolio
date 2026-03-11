@@ -4,9 +4,6 @@
 :root {
   --background: 255 255 255;
   --foreground: 23 23 23;
-
-  /* Accent color for buttons, highlights */
-  --primary: 37 99 235;
 }
 
 /* Dark Mode Support */
