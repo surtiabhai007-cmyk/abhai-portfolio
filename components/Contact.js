@@ -10,7 +10,7 @@ export default function Contact() {
         Get in Touch
       </h2>
 
-      <div className="max-w-4xl mx-auto card-hover p-8 rounded-2xl border border-white/10 bg-white/5 text-center">
+      <div className="max-w-4xl mx-auto card-hover p-8 rounded-2xl border border-gray-200 bg-white shadow-sm text-center">
 
         <p className="text-lg opacity-90 mb-8">
           I’m always open to discussing opportunities in{" "}
