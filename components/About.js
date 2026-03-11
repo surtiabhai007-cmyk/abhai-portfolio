@@ -58,7 +58,7 @@ export default function About() {
 
             <div className="p-5 rounded-xl border border-gray-200 bg-white shadow-sm">
               <p className="text-2xl font-bold text-primary">20+</p>
-              <p className="text-sm text-gray-600">Engineers Led</p>
+              <p className="text-sm text-gray-600">Cross-Functional Team Members</p>
             </div>
 
           </div>
