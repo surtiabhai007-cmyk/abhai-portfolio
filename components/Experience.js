@@ -122,14 +122,14 @@ export default function Experience() {
         Professional Experience
       </h2>
 
-      <div className="relative border-l-2 border-primary pl-10 space-y-10 ml-6">
+      <div className="relative border-l-2 border-primary pl-12 space-y-10 ml-6">
         {displayedExperience.map((exp, i) => (
           <div
             key={i}
             className="experience-card relative p-6 rounded-xl bg-white shadow-sm border border-gray-200 transition"
           >
             {/* Timeline Dot */}
-            <div className="absolute left-0 -translate-x-1/2 top-6 w-4 h-4 rounded-full bg-primary"></div>
+            <div className="absolute -left-[41px] top-6 w-4 h-4 rounded-full bg-primary border-2 border-white"></div>
 
             <h3 className="text-xl font-semibold text-gray-900">
               {exp.role}{" "}
