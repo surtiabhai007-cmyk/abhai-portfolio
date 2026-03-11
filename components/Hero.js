@@ -1,10 +1,7 @@
 export default function Hero() {
   return (
-    <section
-      id="home"
-      className="section-spacing bg-background text-foreground relative overflow-hidden"
-    >
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12 px-6">
+    <section id="home" className="py-16 bg-background text-foreground relative overflow-hidden">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-10 px-6">
 
         {/* Profile Image */}
         <div className="relative flex-shrink-0">
@@ -13,12 +10,12 @@ export default function Hero() {
           <img
             src="/image.png"
             alt="Abhai Surti Project Manager Profile Picture"
-            className="relative w-44 h-44 md:w-52 md:h-52 rounded-full border-4 border-primary shadow-xl object-cover object-top"
+            className="relative w-36 h-36 md:w-44 md:h-44 rounded-full border-4 border-primary shadow-lg object-cover object-top"
           />
         </div>
 
         {/* Text Content */}
-        <div className="text-center md:text-left max-w-2xl">
+        <div className="text-center md:text-left max-w-xl">
 
           <h1 className="text-4xl md:text-5xl font-bold leading-tight">
             Hi, I’m <span className="text-primary">Abhai Surti</span>
@@ -36,7 +33,7 @@ export default function Hero() {
           </p>
 
           {/* Buttons */}
-          <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center md:justify-start">
+          <div className="mt-6 flex flex-wrap gap-4 justify-center md:justify-start">
 
             <a
               href="https://drive.google.com/uc?export=download&id=11EK9msbaBOlM34MAudGD1rHARvMDHffh"
