@@ -122,7 +122,7 @@ export default function Experience() {
         Professional Experience
       </h2>
 
-      <div className="relative border-l border-primary/40 pl-8 space-y-10">
+      <div className="relative border-l-2 border-primary pl-8 space-y-12">
         {displayedExperience.map((exp, i) => (
           <div
             key={i}
