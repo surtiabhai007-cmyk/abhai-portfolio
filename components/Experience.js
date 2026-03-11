@@ -129,7 +129,7 @@ export default function Experience() {
             className="experience-card relative p-6 rounded-xl bg-white shadow-sm border border-gray-200 transition"
           >
             {/* Timeline Dot */}
-            <div className="absolute -left-[41px] top-6 w-4 h-4 rounded-full bg-primary border-2 border-white"></div>
+            <div className="absolute -left-[56px] top-6 w-4 h-4 rounded-full bg-primary border-2 border-white"></div>
 
             <h3 className="text-xl font-semibold text-gray-900">
               {exp.role}{" "}
