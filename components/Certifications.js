@@ -8,9 +8,16 @@ export default function Certifications() {
   const scroll = (direction) => {
     if (scrollRef.current) {
       const { scrollLeft, clientWidth } = scrollRef.current;
+
       const scrollAmount =
-        direction === "left" ? scrollLeft - clientWidth : scrollLeft + clientWidth;
-      scrollRef.current.scrollTo({ left: scrollAmount, behavior: "smooth" });
+        direction === "left"
+          ? scrollLeft - clientWidth
+          : scrollLeft + clientWidth;
+
+      scrollRef.current.scrollTo({
+        left: scrollAmount,
+        behavior: "smooth",
+      });
     }
   };
 
@@ -43,16 +50,25 @@ export default function Certifications() {
   ];
 
   return (
-    <section id="certifications" data-aos="zoom-in">
-      <h2 className="text-3xl font-bold text-cyan-400 mb-6">Certifications</h2>
-      <div className="relative">
+    <section
+      id="certifications"
+      className="section-spacing animate-fadeIn"
+    >
+      <h2 className="text-3xl font-bold text-center mb-10">
+        Certifications
+      </h2>
+
+      <div className="relative max-w-6xl mx-auto">
+
+        {/* Left Arrow */}
         <button
           onClick={() => scroll("left")}
-          className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-700 p-2 rounded-full shadow-md hover:bg-cyan-500 transition z-10"
+          className="absolute left-0 top-1/2 -translate-y-1/2 p-2 rounded-full border border-white/10 bg-white/10 backdrop-blur hover:bg-primary transition z-10"
         >
-          <ChevronLeft size={24} className="text-white" />
+          <ChevronLeft size={24} />
         </button>
 
+        {/* Scroll Container */}
         <div
           ref={scrollRef}
           className="flex gap-6 overflow-x-hidden scroll-smooth scrollbar-hide snap-x snap-mandatory"
@@ -60,17 +76,19 @@ export default function Certifications() {
           {certifications.map((cert, i) => (
             <div
               key={i}
-              className="bg-gray-800 rounded-lg shadow-md p-4 flex flex-col hover:shadow-cyan-500/50 hover:scale-105 transition transform w-72 flex-shrink-0 snap-start"
+              className="card-hover w-72 flex-shrink-0 snap-start p-5 rounded-xl border border-white/10 bg-white/5 flex flex-col"
             >
               <img
                 src={cert.img || placeholder}
                 alt={cert.name}
-                className="rounded-md mb-3 h-32 object-contain bg-gray-900"
+                className="h-32 object-contain mb-4 rounded-md bg-black/30"
               />
+
               <a
                 href={cert.link}
                 target="_blank"
-                className="text-cyan-400 font-semibold hover:underline text-center"
+                rel="noopener noreferrer"
+                className="text-center font-semibold text-primary hover:underline"
               >
                 {cert.name}
               </a>
@@ -78,11 +96,12 @@ export default function Certifications() {
           ))}
         </div>
 
+        {/* Right Arrow */}
         <button
           onClick={() => scroll("right")}
-          className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-700 p-2 rounded-full shadow-md hover:bg-cyan-500 transition z-10"
+          className="absolute right-0 top-1/2 -translate-y-1/2 p-2 rounded-full border border-white/10 bg-white/10 backdrop-blur hover:bg-primary transition z-10"
         >
-          <ChevronRight size={24} className="text-white" />
+          <ChevronRight size={24} />
         </button>
       </div>
     </section>
