@@ -38,71 +38,64 @@ export default function Certifications() {
       img: "/certificates/greatlearning.jpg",
     },
     {
-      name: "Agile Project Management – Google (Coursera)",
-      link: "https://www.coursera.org/account/accomplishments/verify/0UDNP06M82K5",
+      name: "Agile Project Management – Google",
+      link: "#",
       img: "/certificates/agile-google.jpeg",
-    },
-    {
-      name: "Foundations of Project Management – Google",
-      link: "https://www.coursera.org/account/accomplishments/verify/BJCBBMQF28C6",
-      img: "/certificates/foundation-google.jpeg",
     },
   ];
 
   return (
-    <section
-      id="certifications"
-      className="section-spacing animate-fadeIn"
-    >
-      <h2 className="text-3xl font-bold text-center mb-10">
-        Certifications
-      </h2>
+    <section id="certifications" className="py-14">
+      <div className="max-w-6xl mx-auto px-6">
 
-      <div className="relative max-w-6xl mx-auto">
+        <h2 className="text-3xl font-bold mb-10">
+          Certifications
+        </h2>
 
-        {/* Left Arrow */}
-        <button
-          onClick={() => scroll("left")}
-          className="absolute left-0 top-1/2 -translate-y-1/2 p-2 rounded-full border border-white/10 bg-white/10 backdrop-blur hover:bg-primary transition z-10"
-        >
-          <ChevronLeft size={24} />
-        </button>
+        <div className="relative">
 
-        {/* Scroll Container */}
-        <div
-          ref={scrollRef}
-          className="flex gap-6 overflow-x-hidden scroll-smooth scrollbar-hide snap-x snap-mandatory"
-        >
-          {certifications.map((cert, i) => (
-            <div
-              key={i}
-              className="card-hover w-72 flex-shrink-0 snap-start p-5 rounded-xl border border-gray-200 bg-white shadow-sm flex flex-col"
-            >
-              <img
-                src={cert.img || placeholder}
-                alt={cert.name}
-                className="h-32 object-contain mb-4 rounded-md bg-black/30"
-              />
+          <button
+            onClick={() => scroll("left")}
+            className="absolute left-0 top-1/2 -translate-y-1/2 p-2 rounded-full border border-gray-200 bg-white shadow-sm hover:bg-gray-50 z-10"
+          >
+            <ChevronLeft size={22} />
+          </button>
 
-              <a
-                href={cert.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-center font-semibold text-primary hover:underline"
+          <div
+            ref={scrollRef}
+            className="flex gap-6 overflow-x-auto scrollbar-hide scroll-smooth"
+          >
+            {certifications.map((cert, i) => (
+              <div
+                key={i}
+                className="min-w-[260px] p-5 rounded-xl border border-gray-200 bg-white shadow-sm transition hover:shadow-md hover:-translate-y-1"
               >
-                {cert.name}
-              </a>
-            </div>
-          ))}
-        </div>
+                <img
+                  src={cert.img || placeholder}
+                  alt={cert.name}
+                  className="h-32 w-full object-contain mb-4 rounded-md bg-gray-100"
+                />
 
-        {/* Right Arrow */}
-        <button
-          onClick={() => scroll("right")}
-          className="absolute right-0 top-1/2 -translate-y-1/2 p-2 rounded-full border border-white/10 bg-white/10 backdrop-blur hover:bg-primary transition z-10"
-        >
-          <ChevronRight size={24} />
-        </button>
+                <a
+                  href={cert.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm font-medium text-primary hover:underline block text-center"
+                >
+                  {cert.name}
+                </a>
+              </div>
+            ))}
+          </div>
+
+          <button
+            onClick={() => scroll("right")}
+            className="absolute right-0 top-1/2 -translate-y-1/2 p-2 rounded-full border border-gray-200 bg-white shadow-sm hover:bg-gray-50 z-10"
+          >
+            <ChevronRight size={22} />
+          </button>
+
+        </div>
       </div>
     </section>
   );
