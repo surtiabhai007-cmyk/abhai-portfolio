@@ -76,7 +76,7 @@ export default function Certifications() {
           {certifications.map((cert, i) => (
             <div
               key={i}
-              className="card-hover w-72 flex-shrink-0 snap-start p-5 rounded-xl border border-white/10 bg-white/5 flex flex-col"
+              className="card-hover w-72 flex-shrink-0 snap-start p-5 rounded-xl border border-gray-200 bg-white shadow-sm flex flex-col"
             >
               <img
                 src={cert.img || placeholder}
