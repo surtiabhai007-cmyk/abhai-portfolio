@@ -15,7 +15,7 @@ export default function About() {
           <strong> Project Coordinator at TrooTech Business Solutions</strong> in Ahmedabad.
         </p>
 
-        <p className="mt-5">
+        <p className="mt-4">
           My expertise includes <span className="text-primary font-medium">Agile project management</span>, 
           <span className="text-primary font-medium"> AI-driven product delivery</span>, and 
           <span className="text-primary font-medium"> digital transformation initiatives</span>. 
@@ -23,7 +23,7 @@ export default function About() {
           aligned with business goals and stakeholder expectations.
         </p>
 
-        <p className="mt-5">
+        <p className="mt-4">
           I specialize in <span className="text-primary font-medium">stakeholder communication</span>, 
           <span className="text-primary font-medium"> risk management</span>, and 
           <span className="text-primary font-medium"> strategic project planning</span>. 
