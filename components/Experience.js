@@ -118,7 +118,7 @@ export default function Experience() {
       ref={experienceRef}
       className="section-spacing animate-fadeIn"
     >
-      <h2 className="text-3xl font-bold mb-10 text-center">
+      <h2 className="text-3xl font-bold mb-10">
         Professional Experience
       </h2>
 
