@@ -122,25 +122,25 @@ export default function Experience() {
         Professional Experience
       </h2>
 
-      <div className="relative border-l-2 border-primary pl-8 space-y-12">
+      <div className="relative border-l-2 border-primary pl-12 space-y-10 ml-6">>
         {displayedExperience.map((exp, i) => (
           <div
             key={i}
-            className="relative card-hover p-6 rounded-xl border border-white/10 bg-white/5"
+            className="relative p-6 rounded-xl bg-white shadow-sm border border-gray-200"
           >
             {/* Timeline Dot */}
-            <div className="absolute -left-[41px] top-6 w-4 h-4 rounded-full bg-primary"></div>
+            <div className="absolute -left-[34px] top-6 w-4 h-4 rounded-full bg-primary border-2 border-white"></div>
 
-            <h3 className="text-xl font-semibold">
+            <h3 className="text-xl font-semibold text-gray-900">
               {exp.role}{" "}
               <span className="opacity-80">– {exp.company}</span>
             </h3>
 
-            <p className="text-sm opacity-70 mt-1">
+            <p className="text-sm text-gray-500 mt-1">
               {exp.period} | {exp.location}
             </p>
 
-            <ul className="mt-3 space-y-1 list-disc list-inside opacity-90 text-sm">
+            <ul className="mt-3 space-y-2 list-disc list-inside text-gray-700 text-sm">
               {exp.details.map((d, j) => (
                 <li key={j}>{d}</li>
               ))}
