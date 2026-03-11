@@ -129,7 +129,7 @@ export default function Experience() {
             className="relative card-hover p-6 rounded-xl border border-white/10 bg-white/5"
           >
             {/* Timeline Dot */}
-            <div className="absolute -left-[38px] top-6 w-4 h-4 rounded-full bg-primary"></div>
+            <div className="absolute -left-[41px] top-6 w-4 h-4 rounded-full bg-primary"></div>
 
             <h3 className="text-xl font-semibold">
               {exp.role}{" "}
