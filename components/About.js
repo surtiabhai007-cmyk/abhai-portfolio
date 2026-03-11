@@ -1,14 +1,11 @@
 export default function About() {
   return (
-    <section
-      id="about"
-      className="section-spacing animate-fadeIn"
-    >
-      <h2 className="text-3xl font-bold mb-10 text-center">
+    <section id="about" className="py-12 animate-fadeIn">
+      <h2 className="text-3xl font-bold mb-8 text-center">
         About Me
       </h2>
 
-      <div className="card-hover max-w-3xl mx-auto p-8 rounded-2xl border border-white/10 bg-white/5 leading-relaxed text-base md:text-lg">
+      <div className="max-w-2xl mx-auto p-6 leading-relaxed text-base md:text-lg text-gray-700">
         <p>
           I am a <strong className="text-primary">Project Manager & Google Project Management Certified professional</strong> 
           with over <strong>8 years of experience in the IT industry</strong>. I am currently working as a 
