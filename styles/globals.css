@@ -111,3 +111,9 @@ body {
   padding-top: 40px;
   padding-bottom: 40px;
 }
+
+/* Experience Card Hover Effect */
+.experience-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
