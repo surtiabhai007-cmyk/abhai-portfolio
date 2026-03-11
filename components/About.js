@@ -28,7 +28,7 @@ export default function About() {
           <span className="text-primary font-medium"> risk management</span>, and 
           <span className="text-primary font-medium"> strategic project planning</span>. 
           I regularly work with industry tools including 
-          <strong> Jira</strong>, <strong> Trello</strong>, <strong> ClickUp</strong>, and <strong> Asana</strong> 
+          <strong> Jira</strong>, <strong> Trello</strong>, <strong> ClickUp</strong>, and <strong> Asana </strong> 
           to ensure structured collaboration and on-time project delivery.
         </p>
       </div>
