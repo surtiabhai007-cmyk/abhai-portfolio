@@ -49,7 +49,7 @@ export default function Home() {
         <link rel="canonical" href="https://abhai-surti-pm.vercel.app" />
       </Head>
 
-      <div className="min-h-screen bg-background text-foreground">
+      <div className="min-h-screen bg-background text-foreground antialiased">
         {/* Navigation */}
         <header>
           <Navbar />
