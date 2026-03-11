@@ -1,36 +1,62 @@
 @import "tailwindcss";
 
+/* Root Theme Variables */
 :root {
   --background: 255 255 255;
   --foreground: 23 23 23;
+
+  /* Accent color for buttons, highlights */
+  --primary: 37 99 235;
 }
 
+/* Dark Mode Support */
 .dark {
   --background: 10 10 10;
   --foreground: 237 237 237;
+  --primary: 96 165 250;
 }
 
+/* Tailwind Theme Mapping */
 @theme inline {
   --color-background: rgb(var(--background));
   --color-foreground: rgb(var(--foreground));
+  --color-primary: rgb(var(--primary));
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
+/* Smooth page scrolling */
 html {
   scroll-behavior: smooth;
 }
 
+/* Global body styling */
 body {
   background: rgb(var(--background));
   color: rgb(var(--foreground));
-  font-family: var(--font-geist-sans), sans-serif;
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  line-height: 1.6;
 }
 
+/* Better layout consistency */
 * {
   box-sizing: border-box;
 }
 
+/* Professional text selection */
+::selection {
+  background: rgb(var(--primary));
+  color: #ffffff;
+}
+
+/* Accessibility focus styling */
+:focus-visible {
+  outline: 2px solid rgb(var(--primary));
+  outline-offset: 2px;
+}
+
+/* Hide scrollbar utility */
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
@@ -40,6 +66,7 @@ body {
   scrollbar-width: none;
 }
 
+/* Smooth fade animation (used for sections) */
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -51,16 +78,36 @@ body {
   }
 }
 
+/* Section animation */
 .animate-fadeIn {
   animation: fadeIn 0.6s ease-out forwards;
 }
 
-::selection {
-  background: #2563eb;
-  color: white;
+/* Subtle card hover animation (good for project cards) */
+.card-hover {
+  transition: all 0.25s ease;
 }
 
-:focus-visible {
-  outline: 2px solid #2563eb;
-  outline-offset: 2px;
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+/* Professional button styling */
+.btn-primary {
+  background: rgb(var(--primary));
+  color: white;
+  padding: 10px 18px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+/* Section spacing for portfolio layout */
+.section-spacing {
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
