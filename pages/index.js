@@ -61,7 +61,7 @@ export default function Home() {
         </section>
 
         {/* Main Content */}
-        <main className="max-w-6xl mx-auto px-6 py-16 space-y-20">
+        <main className="max-w-6xl mx-auto px-6 py-12 space-y-12">
           <section id="about">
             <About />
           </section>
