@@ -16,7 +16,7 @@ export default function Skills() {
   ];
 
   return (
-    <section id="skills" className="py-14">
+    <section id="skills" className="section-spacing bg-gray-50">
       <div className="max-w-6xl mx-auto px-6">
 
         {/* Section Title */}
