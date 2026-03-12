@@ -2,12 +2,12 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="py-20 bg-background text-foreground relative overflow-hidden"
+      className="section-spacing bg-background text-foreground relative overflow-hidden"
     >
       {/* Background Glow */}
       <div className="absolute top-[-120px] left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-primary/10 blur-3xl rounded-full"></div>
 
-      <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row gap-10 items-start">
+      <div className="flex flex-col md:flex-row gap-10 items-start">
 
         {/* Profile Image */}
         <div className="relative flex-shrink-0">
@@ -20,7 +20,7 @@ export default function Hero() {
           />
         </div>
 
-        {/* Text Content */}
+        {/* Text */}
         <div className="flex-1">
 
           <h1 className="text-4xl md:text-5xl font-bold leading-tight">
@@ -37,9 +37,7 @@ export default function Hero() {
             stakeholder alignment, strategic execution, and digital transformation.
           </p>
 
-          {/* Buttons */}
           <div className="mt-8 flex flex-wrap gap-4">
-
             <a
               href="https://drive.google.com/uc?export=download&id=11EK9msbaBOlM34MAudGD1rHARvMDHffh"
               target="_blank"
@@ -64,10 +62,9 @@ export default function Hero() {
             >
               Contact Me
             </a>
-
           </div>
-        </div>
 
+        </div>
       </div>
     </section>
   );
