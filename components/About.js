@@ -17,7 +17,7 @@ export default function About() {
               Project Manager & Google Project Management Certified professional</span>
               with over <strong>8 years of experience in the IT industry</strong>.
               I am currently working as a <strong>Project Coordinator at
-              TrooTech Business Solutions</strong> in Navsari.
+              TrooTech Business Solutions</strong> in Ahmedabad.
             </p>
 
             <p>
