@@ -4,10 +4,11 @@ export default function Hero() {
       id="home"
       className="section-spacing bg-background text-foreground relative overflow-hidden"
     >
-      {/* Background Glow */}
-      <div className="absolute top-[-120px] left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-primary/10 blur-3xl rounded-full"></div>
 
-      <div className="flex flex-col md:flex-row gap-10 items-start">
+      {/* Background Glow */}
+      <div className="absolute top-[-120px] left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-primary/10 blur-3xl rounded-full pointer-events-none z-0"></div>
+
+      <div className="relative z-10 flex flex-col md:flex-row gap-10 items-start">
 
         {/* Profile Image */}
         <div className="relative flex-shrink-0">
@@ -20,7 +21,7 @@ export default function Hero() {
           />
         </div>
 
-        {/* Text */}
+        {/* Text Content */}
         <div className="flex-1">
 
           <h1 className="text-4xl md:text-5xl font-bold leading-tight">
@@ -38,6 +39,7 @@ export default function Hero() {
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4">
+
             <a
               href="https://drive.google.com/uc?export=download&id=11EK9msbaBOlM34MAudGD1rHARvMDHffh"
               target="_blank"
@@ -62,9 +64,11 @@ export default function Hero() {
             >
               Contact Me
             </a>
+
           </div>
 
         </div>
+
       </div>
     </section>
   );
