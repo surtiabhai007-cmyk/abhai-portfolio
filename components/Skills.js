@@ -1,44 +1,98 @@
 export default function Skills() {
 
-  const skills = [
-    "Agile & Scrum (Certified)",
-    "Digital Transformation Practices",
-    "End-to-End Project Lifecycle Management",
-    "Cross-functional Team Leadership",
-    "Stakeholder & Client Communication",
-    "AI / ML Project Delivery",
-    "Risk & Issue Management",
-    "Tools: Jira, Trello, ClickUp, Asana",
-    "Resource Allocation & Reporting",
-    "Documentation & Requirement Analysis",
-    "Process Improvement & Efficiency Boost",
-    "Global Client Project Management",
+  const skillGroups = [
+    {
+      icon: "📊",
+      title: "Project Management",
+      skills: [
+        "Agile & Scrum",
+        "Project Lifecycle",
+        "Risk Management",
+        "Resource Planning",
+        "Process Improvement"
+      ],
+    },
+    {
+      icon: "👥",
+      title: "Leadership",
+      skills: [
+        "Cross-functional Teams",
+        "Stakeholder Alignment",
+        "Client Communication",
+        "Global Team Management"
+      ],
+    },
+    {
+      icon: "⚙️",
+      title: "Technology",
+      skills: [
+        "AI / ML Project Delivery",
+        "Digital Transformation",
+        "Requirement Analysis",
+        "Technical Documentation"
+      ],
+    },
+    {
+      icon: "🧰",
+      title: "Tools",
+      skills: [
+        "Jira",
+        "Trello",
+        "ClickUp",
+        "Asana",
+        "Agile Reporting"
+      ],
+    },
   ];
 
   return (
     <section id="skills" className="section-spacing bg-gray-50">
-      <div className="max-w-6xl mx-auto px-6">
 
-        {/* Section Title */}
-        <h2 className="text-3xl font-bold mb-10">
-          Core Skills
-        </h2>
+      {/* Section Title */}
+      <div className="mb-12">
+        <h2 className="text-3xl font-bold">Core Skills</h2>
+        <p className="text-gray-600 mt-2">
+          Key capabilities developed through managing cross-functional teams,
+          delivering AI-driven solutions, and executing enterprise IT projects.
+        </p>
+      </div>
 
-        {/* Skills Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      {/* Skill Groups */}
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
 
-          {skills.map((skill, i) => (
-            <div
-              key={i}
-              className="p-6 rounded-xl border border-gray-200 bg-white shadow-sm text-sm font-medium text-gray-700 transition duration-200 hover:shadow-md hover:-translate-y-1"
-            >
-              {skill}
+        {skillGroups.map((group, i) => (
+          <div
+            key={i}
+            className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition"
+          >
+
+            {/* Icon */}
+            <div className="text-3xl mb-3">
+              {group.icon}
             </div>
-          ))}
 
-        </div>
+            {/* Title */}
+            <h3 className="text-lg font-semibold mb-4">
+              {group.title}
+            </h3>
+
+            {/* Skills */}
+            <div className="flex flex-wrap gap-2">
+              {group.skills.map((skill, j) => (
+                <span
+                  key={j}
+                  className="text-xs bg-blue-50 text-blue-700 px-3 py-1 rounded-full"
+                >
+                  {skill}
+                </span>
+              ))}
+            </div>
+
+          </div>
+        ))}
 
       </div>
+
     </section>
   );
 }
