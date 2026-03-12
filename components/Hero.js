@@ -1,14 +1,13 @@
 export default function Hero() {
   return (
     <section
-  id="home"
-  className="section-spacing pt-28 bg-background text-foreground relative overflow-hidden"
->
-
+      id="home"
+      className="pt-32 pb-16 bg-background text-foreground relative overflow-hidden"
+    >
       {/* Background Glow */}
-      <div className="absolute top-[-120px] left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-primary/10 blur-3xl rounded-full pointer-events-none z-0"></div>
+      <div className="absolute top-[-120px] left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-primary/10 blur-3xl rounded-full pointer-events-none"></div>
 
-      <div className="relative z-10 flex flex-col md:flex-row gap-10 items-start">
+      <div className="max-w-6xl mx-auto px-6 relative z-10 flex flex-col md:flex-row gap-10 items-center md:items-start">
 
         {/* Profile Image */}
         <div className="relative flex-shrink-0">
@@ -17,7 +16,7 @@ export default function Hero() {
           <img
             src="/image.png"
             alt="Abhai Surti Project Manager Profile Picture"
-            className="relative w-36 h-36 md:w-44 md:h-44 rounded-full border-4 border-primary shadow-lg object-cover object-top"
+            className="relative w-40 h-40 md:w-48 md:h-48 rounded-full border-4 border-primary shadow-lg object-cover object-top"
           />
         </div>
 
@@ -39,7 +38,6 @@ export default function Hero() {
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4">
-
             <a
               href="https://drive.google.com/uc?export=download&id=11EK9msbaBOlM34MAudGD1rHARvMDHffh"
               target="_blank"
@@ -64,7 +62,6 @@ export default function Hero() {
             >
               Contact Me
             </a>
-
           </div>
 
         </div>
