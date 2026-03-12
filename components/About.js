@@ -1,7 +1,6 @@
 export default function About() {
   return (
-    <section id="about" className="py-14">
-      <div className="max-w-6xl mx-auto px-6">
+    <section id="about" className="section-container">
 
         <h2 className="text-3xl font-bold mb-10">
           About Me
@@ -63,7 +62,7 @@ export default function About() {
 
           </div>
 
-        </div>
+  
 
       </div>
     </section>
