@@ -1,9 +1,9 @@
 export default function Hero() {
   return (
     <section
-      id="home"
-      className="section-spacing bg-background text-foreground relative overflow-hidden"
-    >
+  id="home"
+  className="section-spacing pt-28 bg-background text-foreground relative overflow-hidden"
+>
 
       {/* Background Glow */}
       <div className="absolute top-[-120px] left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-primary/10 blur-3xl rounded-full pointer-events-none z-0"></div>
