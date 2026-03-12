@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <section id="about" className="section-container">
+    <section id="about" className="section-spacing">
 
         <h2 className="text-3xl font-bold mb-10">
           About Me
