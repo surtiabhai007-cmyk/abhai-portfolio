@@ -2,7 +2,7 @@ import { FaWhatsapp, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 export default function Contact() {
   return (
-<section id="contact" className="section-container">
+<section id="contact" className="section-spacing bg-gray-50">
 
         <h2 className="text-3xl font-bold mb-10">
           Get in Touch
