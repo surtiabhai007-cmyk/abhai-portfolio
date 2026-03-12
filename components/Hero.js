@@ -1,7 +1,11 @@
 export default function Hero() {
   return (
-    <section id="home" className="py-16 bg-background text-foreground relative overflow-hidden">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-10 px-6">
+    <section id="home" className="py-20 bg-background text-foreground relative overflow-hidden">
+
+      {/* Background Glow */}
+      <div className="absolute top-[-120px] left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-primary/10 blur-3xl rounded-full"></div>
+
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-10 px-6 relative">
 
         {/* Profile Image */}
         <div className="relative flex-shrink-0">
@@ -15,7 +19,7 @@ export default function Hero() {
         </div>
 
         {/* Text Content */}
-        <div className="text-center md:text-left max-w-xl">
+        <div className="flex-1 text-center md:text-left">
 
           <h1 className="text-4xl md:text-5xl font-bold leading-tight">
             Hi, I’m <span className="text-primary">Abhai Surti</span>
@@ -26,14 +30,14 @@ export default function Hero() {
           </p>
 
           {/* Tagline */}
-          <p className="mt-4 text-lg md:text-xl opacity-80 leading-relaxed">
+          <p className="mt-4 text-lg md:text-xl opacity-80 leading-relaxed max-w-3xl">
             Leading <span className="text-primary">Agile teams</span> and delivering
             <span className="text-primary"> AI-driven IT solutions</span> with a focus on
             stakeholder alignment, strategic execution, and digital transformation.
           </p>
 
           {/* Buttons */}
-          <div className="mt-6 flex flex-wrap gap-4 justify-center md:justify-start">
+          <div className="mt-8 flex flex-wrap gap-4 justify-center md:justify-start">
 
             <a
               href="https://drive.google.com/uc?export=download&id=11EK9msbaBOlM34MAudGD1rHARvMDHffh"
@@ -61,6 +65,7 @@ export default function Hero() {
             </a>
 
           </div>
+
         </div>
       </div>
     </section>
