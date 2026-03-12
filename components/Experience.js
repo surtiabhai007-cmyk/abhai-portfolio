@@ -151,7 +151,10 @@ export default function Experience() {
 
       {/* Toggle Button */}
       <div className="text-center mt-10">
-        <button onClick={handleToggle} className="btn-primary">
+        <button
+  onClick={handleToggle}
+  className="px-6 py-3 rounded-lg bg-primary text-white font-medium transition hover:bg-blue-700 hover:shadow-md hover:-translate-y-0.5"
+>
           {showAll ? "View Less Experience" : "View More Experience"}
         </button>
       </div>
