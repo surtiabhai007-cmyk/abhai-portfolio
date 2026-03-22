@@ -21,12 +21,11 @@ export default function Experience() {
       period: "Sept 2023 – Present",
       location: "Ahmedabad, Gujarat",
       details: [
-        "Leading AI-driven projects across diverse domains with expertise in legal tech.",
-        "Defined and executed long-term product strategies aligned with company goals.",
-        "Managed cross-functional Agile teams ensuring Scrum best practices.",
-        "Facilitated stand-ups, sprint planning, and retrospectives.",
-        "Communicated project risks and updates to stakeholders.",
-        "Encouraged innovation and engineering best practices across teams.",
+        "Leading AI-driven projects across diverse domains.",
+        "Defined and executed long-term product strategies.",
+        "Managed cross-functional Agile teams.",
+        "Facilitated sprint planning and retrospectives.",
+        "Communicated risks and updates to stakeholders.",
       ],
     },
     {
@@ -35,10 +34,10 @@ export default function Experience() {
       period: "Feb 2023 – Aug 2023",
       location: "Surat, Gujarat",
       details: [
-        "Managed the full IT project lifecycle from initiation to delivery.",
-        "Supervised development teams and resolved delivery blockers.",
-        "Presented project updates to clients and senior management.",
-        "Ensured on-time and high-quality delivery of multiple projects.",
+        "Managed full IT project lifecycle.",
+        "Supervised development teams.",
+        "Presented updates to clients.",
+        "Ensured on-time delivery.",
       ],
     },
     {
@@ -47,65 +46,10 @@ export default function Experience() {
       period: "Jul 2021 – Jan 2023",
       location: "Surat, Gujarat",
       details: [
-        "Implemented Agile methodologies to improve project efficiency.",
-        "Led a global team of 20+ IT professionals.",
-        "Tracked KPIs and proactively resolved delivery risks.",
-        "Improved team productivity by 20% through Agile practices.",
-      ],
-    },
-    {
-      role: "Business Analyst",
-      company: "CMARIX Technologies",
-      period: "Feb 2021 – May 2021",
-      location: "Ahmedabad, Gujarat",
-      details: [
-        "Converted client requirements into detailed project scope documents.",
-        "Conducted workshops to finalize project proposals.",
-        "Created Work Breakdown Structures (WBS) for execution clarity.",
-      ],
-    },
-    {
-      role: "Business Analyst",
-      company: "ManekTech",
-      period: "Jul 2019 – Jan 2021",
-      location: "Ahmedabad, Gujarat",
-      details: [
-        "Prepared requirement analysis and technical proposals.",
-        "Created process flows and wireframes using Axure.",
-        "Developed client-facing case studies and presentations.",
-      ],
-    },
-    {
-      role: "Business Development Associate",
-      company: "Tri-Force IT Services",
-      period: "Dec 2018 – Jun 2019",
-      location: "Ahmedabad, Gujarat",
-      details: [
-        "Researched US Federal Agencies and government tenders.",
-        "Prepared proposal documentation for federal projects.",
-        "Collaborated with clients on compliance documentation.",
-      ],
-    },
-    {
-      role: "Web Developer",
-      company: "SaiKrupa IT Software Solutions",
-      period: "Feb 2016 – Feb 2017",
-      location: "Navsari, Gujarat",
-      details: [
-        "Developed PHP/MySQL websites and portals.",
-        "Improved UX and platform functionality.",
-        "Mentored students in programming and final-year projects.",
-      ],
-    },
-    {
-      role: "PHP Developer",
-      company: "Lysung Ventures",
-      period: "Jul 2015 – Jan 2016",
-      location: "Surat, Gujarat",
-      details: [
-        "Built client-facing web applications.",
-        "Maintained open-source codebases.",
-        "Ensured bug-free production deployments.",
+        "Implemented Agile methodologies.",
+        "Led a team of 20+ professionals.",
+        "Tracked KPIs and resolved risks.",
+        "Improved productivity by 20%.",
       ],
     },
   ];
@@ -116,48 +60,62 @@ export default function Experience() {
     <section
       id="experience"
       ref={experienceRef}
-      className="section-spacing animate-fadeIn"
+      className="section-spacing"
     >
-      <h2 className="text-3xl font-bold mb-10">
+      {/* Title */}
+      <h2 className="text-2xl md:text-3xl font-bold mb-8">
         Professional Experience
       </h2>
 
-      <div className="relative border-l-2 border-primary pl-10 space-y-10 ml-6">
+      {/* Timeline */}
+      <div className="relative border-l border-primary/40 pl-5 space-y-6">
+
         {displayedExperience.map((exp, i) => (
           <div
             key={i}
-            className="experience-card relative p-6 rounded-xl bg-white shadow-sm border border-gray-200 transition"
+            className="relative bg-white border border-gray-200 rounded-xl p-4 md:p-6 shadow-sm hover:shadow-md transition"
           >
-            {/* Timeline Dot */}
-            <div className="absolute left-0 -translate-x-1/2 top-6 w-4 h-4 rounded-full bg-primary"></div>
 
-            <h3 className="text-xl font-semibold text-gray-900">
-              {exp.role}{" "}
-              <span className="opacity-80">– {exp.company}</span>
+            {/* Dot */}
+            <div className="absolute -left-[9px] top-5 w-3 h-3 bg-primary rounded-full"></div>
+
+            {/* Role */}
+            <h3 className="text-base md:text-lg font-semibold text-gray-900">
+              {exp.role}
             </h3>
 
-            <p className="text-sm text-gray-500 mt-1">
-              {exp.period} | {exp.location}
+            {/* Company */}
+            <p className="text-sm text-gray-600 mt-1">
+              {exp.company}
             </p>
 
-            <ul className="mt-3 space-y-2 list-disc list-inside text-gray-700 text-sm">
+            {/* Meta */}
+            <p className="text-xs text-gray-500 mt-1">
+              {exp.period} • {exp.location}
+            </p>
+
+            {/* Points */}
+            <ul className="mt-3 space-y-1 text-sm text-gray-700 list-disc list-inside">
               {exp.details.map((d, j) => (
                 <li key={j}>{d}</li>
               ))}
             </ul>
+
           </div>
         ))}
+
       </div>
 
-      {/* Toggle Button */}
-      <div className="text-center mt-10">
+      {/* Button */}
+      <div className="flex justify-center mt-8">
         <button
-  onClick={handleToggle}
-  className="px-6 py-3 rounded-lg bg-primary text-white font-medium transition hover:bg-blue-700 hover:shadow-md hover:-translate-y-0.5"
->
-          {showAll ? "View Less Experience" : "View More Experience"}
+          onClick={handleToggle}
+          className="px-5 py-2.5 rounded-lg bg-primary text-white text-sm font-medium hover:bg-blue-700 transition"
+        >
+          {showAll ? "View Less" : "View More"}
         </button>
       </div>
+
     </section>
   );
 }
