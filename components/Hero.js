@@ -2,7 +2,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="pt-28 pb-12 bg-background text-foreground relative overflow-hidden"
+      className="pt-28 pb-14 bg-background text-foreground relative overflow-hidden"
     >
       {/* Background Glow */}
       <div className="absolute top-[-120px] left-1/2 -translate-x-1/2 w-[500px] h-[500px] md:w-[700px] md:h-[700px] bg-primary/10 blur-3xl rounded-full pointer-events-none"></div>
@@ -40,37 +40,39 @@ export default function Hero() {
           {/* Buttons */}
           <div className="mt-6 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center md:justify-start">
 
+            {/* Primary */}
             <a
               href="https://drive.google.com/uc?export=download&id=11EK9msbaBOlM34MAudGD1rHARvMDHffh"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-primary w-full sm:w-auto text-center"
+              className="px-6 py-3 rounded-lg bg-primary text-white font-medium shadow-sm hover:bg-blue-700 hover:shadow-md transition w-full sm:w-auto text-center"
             >
               Download CV
             </a>
 
+            {/* Secondary */}
             <a
               href="https://www.linkedin.com/in/abhai-surti-b20854140"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-3 rounded-lg border border-primary text-primary hover:bg-primary hover:text-white transition w-full sm:w-auto text-center"
+              className="px-6 py-3 rounded-lg border border-primary text-primary font-medium hover:bg-primary hover:text-white transition w-full sm:w-auto text-center"
             >
               LinkedIn Profile
             </a>
 
           </div>
 
-          {/* Contact Link */}
-          <div className="mt-4">
+          {/* Contact Button (Improved) */}
+          <div className="mt-4 flex justify-center md:justify-start">
             <a
-  href="#contact"
-  className="group inline-flex items-center gap-2 px-5 py-2.5 rounded-lg border border-gray-300 text-gray-700 text-sm font-medium hover:border-primary hover:text-primary hover:bg-primary/5 transition"
->
-  Contact Me
-  <span className="transition-transform group-hover:translate-x-1">
-    →
-  </span>
-</a>
+              href="#contact"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-gray-100 text-gray-800 text-sm font-medium hover:bg-primary hover:text-white transition"
+            >
+              Contact Me
+              <span className="transition-transform group-hover:translate-x-1">
+                →
+              </span>
+            </a>
           </div>
 
         </div>
