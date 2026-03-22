@@ -1,16 +1,24 @@
 export default function Certifications() {
   const certifications = [
     {
-      title: "Google Project Management Professional Certificate",
-      image: "/cert1.png",
+      name: "Google Project Management Professional Certificate",
+      link: "https://www.credly.com/badges/450795fc-f884-4da0-a90d-f92e61baa244",
+      img: "/certificates/pmc-coursera.png",
     },
     {
-      title: "AI in Project Management – Specialization",
-      image: "/cert2.png",
+      name: "AI in Project Management – Specialization",
+      link: "#",
+      img: "/certificates/ai-projects.png",
     },
     {
-      title: "Project Management – Great Learning",
-      image: "/cert3.png",
+      name: "Project Management - Great Learning",
+      link: "#",
+      img: "/certificates/greatlearning.jpg",
+    },
+    {
+      name: "Agile Project Management – Google",
+      link: "#",
+      img: "/certificates/agile-google.jpeg",
     },
   ];
 
