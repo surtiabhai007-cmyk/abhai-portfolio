@@ -63,11 +63,14 @@ export default function Hero() {
           {/* Contact Link */}
           <div className="mt-4">
             <a
-              href="#contact"
-              className="text-sm text-gray-600 hover:text-primary transition"
-            >
-              Contact Me →
-            </a>
+  href="#contact"
+  className="group inline-flex items-center gap-2 px-5 py-2.5 rounded-lg border border-gray-300 text-gray-700 text-sm font-medium hover:border-primary hover:text-primary hover:bg-primary/5 transition"
+>
+  Contact Me
+  <span className="transition-transform group-hover:translate-x-1">
+    →
+  </span>
+</a>
           </div>
 
         </div>
