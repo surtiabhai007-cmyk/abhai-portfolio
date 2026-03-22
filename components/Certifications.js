@@ -1,4 +1,26 @@
+import { useRef } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+
 export default function Certifications() {
+  const placeholder = "/certificates/placeholder.png";
+  const scrollRef = useRef(null);
+
+  const scroll = (direction) => {
+    if (scrollRef.current) {
+      const { scrollLeft, clientWidth } = scrollRef.current;
+
+      const scrollAmount =
+        direction === "left"
+          ? scrollLeft - clientWidth
+          : scrollLeft + clientWidth;
+
+      scrollRef.current.scrollTo({
+        left: scrollAmount,
+        behavior: "smooth",
+      });
+    }
+  };
+
   const certifications = [
     {
       name: "Google Project Management Professional Certificate",
@@ -6,7 +28,7 @@ export default function Certifications() {
       img: "/certificates/pmc-coursera.png",
     },
     {
-      name: "AI in Project Management – Specialization",
+      name: "AI in Project Management â€“ Specialization",
       link: "#",
       img: "/certificates/ai-projects.png",
     },
@@ -16,48 +38,65 @@ export default function Certifications() {
       img: "/certificates/greatlearning.jpg",
     },
     {
-      name: "Agile Project Management – Google",
+      name: "Agile Project Management â€“ Google",
       link: "#",
       img: "/certificates/agile-google.jpeg",
     },
   ];
 
   return (
-    <section id="certifications" className="section-spacing bg-gray-50">
+    <section id="certifications" className="py-14">
+      <div className="max-w-6xl mx-auto px-6">
 
-      {/* Title */}
-      <h2 className="text-2xl md:text-3xl font-bold mb-8">
-        Certifications
-      </h2>
+        <h2 className="text-3xl font-bold mb-10">
+          Certifications
+        </h2>
 
-      {/* Mobile Scroll */}
-      <div className="flex gap-4 overflow-x-auto pb-2 scrollbar-hide">
+        <div className="relative">
 
-        {certifications.map((cert, i) => (
-          <div
-            key={i}
-            className="min-w-[260px] bg-white border border-gray-200 rounded-xl p-4 shadow-sm hover:shadow-md transition"
+          <button
+            onClick={() => scroll("left")}
+            className="absolute left-0 top-1/2 -translate-y-1/2 p-2 rounded-full border border-gray-200 bg-white shadow-sm hover:bg-gray-50 z-10"
           >
+            <ChevronLeft size={22} />
+          </button>
 
-            {/* Image */}
-            <div className="bg-gray-100 rounded-lg overflow-hidden mb-3">
-              <img
-                src={cert.image}
-                alt={cert.title}
-                className="w-full h-36 object-contain"
-              />
-            </div>
+          <div
+            ref={scrollRef}
+            className="flex gap-6 overflow-x-auto scrollbar-hide scroll-smooth"
+          >
+            {certifications.map((cert, i) => (
+              <div
+                key={i}
+                className="min-w-[260px] p-5 rounded-xl border border-gray-200 bg-white shadow-sm transition hover:shadow-md hover:-translate-y-1"
+              >
+                <img
+                  src={cert.img || placeholder}
+                  alt={cert.name}
+                  className="h-32 w-full object-contain mb-4 rounded-md bg-gray-100"
+                />
 
-            {/* Title */}
-            <p className="text-sm font-medium text-primary leading-snug">
-              {cert.title}
-            </p>
-
+                <a
+                  href={cert.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm font-medium text-primary hover:underline block text-center"
+                >
+                  {cert.name}
+                </a>
+              </div>
+            ))}
           </div>
-        ))}
 
+          <button
+            onClick={() => scroll("right")}
+            className="absolute right-0 top-1/2 -translate-y-1/2 p-2 rounded-full border border-gray-200 bg-white shadow-sm hover:bg-gray-50 z-10"
+          >
+            <ChevronRight size={22} />
+          </button>
+
+        </div>
       </div>
-
     </section>
   );
 }
