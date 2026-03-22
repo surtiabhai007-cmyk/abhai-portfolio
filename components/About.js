@@ -2,67 +2,78 @@ export default function About() {
   return (
     <section id="about" className="section-spacing">
 
-        <h2 className="text-3xl font-bold mb-10">
-          About Me
-        </h2>
+      {/* Title */}
+      <h2 className="text-2xl md:text-3xl font-bold mb-8">
+        About Me
+      </h2>
 
-        <div className="grid md:grid-cols-2 gap-12 items-start">
+      {/* Content */}
+      <div className="grid md:grid-cols-2 gap-8 md:gap-10 items-start">
 
-          {/* Left Content */}
-          <div className="text-gray-700 leading-relaxed space-y-4">
+        {/* Left Content */}
+        <div className="space-y-4 text-gray-700 leading-relaxed text-sm md:text-base">
 
-            <p>
-              I am a <span className="text-primary font-semibold">
-              Project Manager & Google Project Management Certified professional</span>
-              with over <strong>8 years of experience in the IT industry</strong>.
-              I am currently working as a <strong>Project Coordinator at
-              TrooTech Business Solutions</strong> in Ahmedabad.
-            </p>
+          <p>
+            I’m a{" "}
+            <span className="text-primary font-medium">
+              Project Manager & Google Certified professional
+            </span>{" "}
+            with <span className="font-semibold">8+ years</span> in IT.
+          </p>
 
-            <p>
-              My expertise includes <span className="text-primary">Agile project management</span>,
-              <span className="text-primary"> AI-driven product delivery</span>,
-              and <span className="text-primary"> digital transformation initiatives</span>.
-              I have successfully managed cross-functional teams and delivered
-              enterprise-grade IT solutions aligned with business goals.
-            </p>
+          <p>
+            Currently working as a{" "}
+            <span className="font-semibold">
+              Project Coordinator at TrooTech
+            </span>.
+          </p>
 
-            <p>
-              I specialize in <span className="text-primary">stakeholder communication</span>,
-              <span className="text-primary"> risk management</span>, and
-              <span className="text-primary"> strategic project planning</span>.
-              I regularly work with tools like <strong>Jira, Trello, ClickUp,
-              and Asana</strong>.
-            </p>
+          <p>
+            I specialize in{" "}
+            <span className="text-primary">
+              Agile delivery, AI-driven solutions, and digital transformation
+            </span>.
+          </p>
 
-          </div>
+          <p>
+            Experienced in{" "}
+            <span className="text-primary">
+              stakeholder communication, risk management, and strategic planning
+            </span>.
+          </p>
 
-          {/* Right Highlights */}
-          <div className="grid grid-cols-2 gap-6">
+          <p>
+            Tools:{" "}
+            <span className="font-medium">
+              Jira, Trello, ClickUp, Asana
+            </span>
+          </p>
 
-            <div className="p-5 rounded-xl border border-gray-200 bg-white shadow-sm">
-              <p className="text-2xl font-bold text-primary">8+</p>
-              <p className="text-sm text-gray-600">Years Experience</p>
+        </div>
+
+        {/* Right Stats */}
+        <div className="grid grid-cols-2 gap-4">
+
+          {[
+            { value: "8+", label: "Years Exp" },
+            { value: "20+", label: "Projects" },
+            { value: "15+", label: "Clients" },
+            { value: "20+", label: "Team Size" },
+          ].map((item, i) => (
+            <div
+              key={i}
+              className="p-4 md:p-5 rounded-lg md:rounded-xl border border-gray-200 bg-white shadow-sm text-center"
+            >
+              <p className="text-xl md:text-2xl font-bold text-primary">
+                {item.value}
+              </p>
+              <p className="text-xs md:text-sm text-gray-600 mt-1">
+                {item.label}
+              </p>
             </div>
+          ))}
 
-            <div className="p-5 rounded-xl border border-gray-200 bg-white shadow-sm">
-              <p className="text-2xl font-bold text-primary">20+</p>
-              <p className="text-sm text-gray-600">Projects Delivered</p>
-            </div>
-
-            <div className="p-5 rounded-xl border border-gray-200 bg-white shadow-sm">
-              <p className="text-2xl font-bold text-primary">15+</p>
-              <p className="text-sm text-gray-600">Clients Managed</p>
-            </div>
-
-            <div className="p-5 rounded-xl border border-gray-200 bg-white shadow-sm">
-              <p className="text-2xl font-bold text-primary">20+</p>
-              <p className="text-sm text-gray-600">Cross-Functional Team Members</p>
-            </div>
-
-          </div>
-
-  
+        </div>
 
       </div>
     </section>
