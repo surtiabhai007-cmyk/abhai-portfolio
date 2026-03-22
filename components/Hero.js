@@ -37,7 +37,7 @@ export default function Hero() {
             stakeholder alignment, strategic execution, and digital transformation.
           </p>
 
-          {/* Buttons */}
+          {/* Buttons (All Inline + Consistent) */}
           <div className="mt-6 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center md:justify-start">
 
             {/* Primary */}
@@ -60,19 +60,14 @@ export default function Hero() {
               LinkedIn Profile
             </a>
 
-          </div>
-
-          {/* Contact Button (Improved) */}
-          <div className="mt-4 flex justify-center md:justify-start">
+            {/* Contact (Now Same Style as Secondary) */}
             <a
               href="#contact"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-gray-100 text-gray-800 text-sm font-medium hover:bg-primary hover:text-white transition"
+              className="px-6 py-3 rounded-lg border border-gray-300 text-gray-700 font-medium hover:border-primary hover:bg-primary hover:text-white transition w-full sm:w-auto text-center"
             >
               Contact Me
-              <span className="transition-transform group-hover:translate-x-1">
-                →
-              </span>
             </a>
+
           </div>
 
         </div>
