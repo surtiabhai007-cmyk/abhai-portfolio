@@ -2,12 +2,12 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="pt-32 pb-16 bg-background text-foreground relative overflow-hidden"
+      className="pt-28 pb-12 bg-background text-foreground relative overflow-hidden"
     >
       {/* Background Glow */}
-      <div className="absolute top-[-120px] left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-primary/10 blur-3xl rounded-full pointer-events-none"></div>
+      <div className="absolute top-[-120px] left-1/2 -translate-x-1/2 w-[500px] h-[500px] md:w-[700px] md:h-[700px] bg-primary/10 blur-3xl rounded-full pointer-events-none"></div>
 
-      <div className="max-w-6xl mx-auto px-6 relative z-10 flex flex-col md:flex-row gap-10 items-center md:items-start">
+      <div className="max-w-6xl mx-auto px-6 relative z-10 flex flex-col md:flex-row gap-8 md:gap-10 items-center md:items-start text-center md:text-left">
 
         {/* Profile Image */}
         <div className="relative flex-shrink-0">
@@ -15,34 +15,36 @@ export default function Hero() {
 
           <img
             src="/image.png"
-            alt="Abhai Surti Project Manager Profile Picture"
-            className="relative w-40 h-40 md:w-48 md:h-48 rounded-full border-4 border-primary shadow-lg object-cover object-top"
+            alt="Abhai Surti Profile"
+            className="relative w-28 h-28 md:w-48 md:h-48 rounded-full border-4 border-primary shadow-lg object-cover object-top"
           />
         </div>
 
         {/* Text Content */}
         <div className="flex-1">
 
-          <h1 className="text-4xl md:text-5xl font-bold leading-tight">
+          <h1 className="text-3xl md:text-5xl font-bold leading-tight">
             Hi, I’m <span className="text-primary">Abhai Surti</span>
           </h1>
 
-          <p className="mt-4 text-xl md:text-2xl font-medium opacity-90">
+          <p className="mt-3 text-lg md:text-2xl font-medium opacity-90">
             Project Manager · Google PM Certified
           </p>
 
-          <p className="mt-4 text-lg md:text-xl opacity-80 leading-relaxed max-w-3xl">
+          <p className="mt-4 text-base md:text-xl opacity-80 leading-relaxed max-w-xl mx-auto md:mx-0">
             Leading <span className="text-primary">Agile teams</span> and delivering
             <span className="text-primary"> AI-driven IT solutions</span> with a focus on
             stakeholder alignment, strategic execution, and digital transformation.
           </p>
 
-          <div className="mt-8 flex flex-wrap gap-4">
+          {/* Buttons */}
+          <div className="mt-6 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center md:justify-start">
+
             <a
               href="https://drive.google.com/uc?export=download&id=11EK9msbaBOlM34MAudGD1rHARvMDHffh"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-primary"
+              className="btn-primary w-full sm:w-auto text-center"
             >
               Download CV
             </a>
@@ -51,21 +53,24 @@ export default function Hero() {
               href="https://www.linkedin.com/in/abhai-surti-b20854140"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-3 rounded-lg border border-primary text-primary hover:bg-primary hover:text-white transition"
+              className="px-6 py-3 rounded-lg border border-primary text-primary hover:bg-primary hover:text-white transition w-full sm:w-auto text-center"
             >
               LinkedIn Profile
             </a>
 
+          </div>
+
+          {/* Contact Link */}
+          <div className="mt-4">
             <a
               href="#contact"
-              className="px-6 py-3 rounded-lg border border-white/20 hover:border-primary hover:text-primary transition"
+              className="text-sm text-gray-600 hover:text-primary transition"
             >
-              Contact Me
+              Contact Me →
             </a>
           </div>
 
         </div>
-
       </div>
     </section>
   );
